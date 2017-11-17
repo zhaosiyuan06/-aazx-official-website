@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ .information{
+    width: 100%;
+    height: 500px;
+     /*background: palevioletred;*/
+     margin: 0;
+     padding: 0;
+}
+.information  .information-center{
+    width: 60%;
+    height: 100%;
+    /*background: blue;*/
+    margin: 0 auto;
+}
+ .information  .information-center .center-left{
+    width: 50%;
+    height: 100%;
+    /*background-color: #17a78b;*/
+    float: left;
+    padding-right: 20px;
+overflow: hidden;
+}
+ .information  .information-center .center-left h3{
+    width:100%;
+    text-align: center;
+    line-height: 50px;
+    /*background: red;*/
+    padding-top: 10px;
+}
+ .information  .information-center .center-right{
+    padding: 20px;
+    width: 50%;
+    height:100%;
+    /*background-color: palevioletred;*/
+    float: left;
+}
+ .information  .information-center .center-left p{
+ line-height:25px;
+}
+ .information  .information-center .center-right .img-boxL{
+    width: 50%;
+    height: 100%;
+    /*background: yellow;*/
+    float: left;
+}
+ .information  .information-center .center-right .img-boxL img{
+    width: 100%;
+    height:100%;
+}
+ .information  .information-center .center-right .img-boxR{
+    width: 50%;
+    height: 100%;
+    /*background: green;*/
+    float: left;
+}
+ .information  .information-center .center-right .img-boxR img{
+    width: 100%;
+    height: 50%;
+}
+ .youshi{
+     width: 100%;
+     height:450px;
+     padding-top: 30px;
+     background: #ddd;
+     margin-top: 50px;
+ }
+ .youshi .youshi-center{
+     width: 60%;
+     height: 100%;
+     /*background: yellow;*/
+     margin: auto;
+ }
+.youshi .youshi-center .center-top{
+    width: 100%;
+    height: 15%;
+    /*background: blue;*/
+}
+.youshi .youshi-center .center-top h3{
+    text-align: center;
+    line-height: 60px;
+}
+.youshi .youshi-center .center-bottom{
+    width: 100%;
+    height: 85%;
+    /*background: green;*/
+}
+.youshi .youshi-center .center-bottom ul{
+    width: 100%;
+    height: 100%;
+    /*background: black;*/
+    padding: 0;
+}
+.youshi .youshi-center .center-bottom ul li{
+    width: 25%;
+    height: 100%;
+    float: left;
+    /*background:yellow;*/
+    /*border-radius: 100%;*/
+    position: relative;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+/*.youshi .youshi-center .center-bottom ul li::before{*/
+    /*content: "";*/
+    /*padding-top:100%;*/
+    /*display: block;*/
+/*}*/
+.youshi .youshi-center .center-bottom ul li div{
+    width:71% ;
+    background: #1ABC9C;
+    display: inline-block;
+    margin: 0 auto;
+    transform:rotate(45deg);
+    margin-top: 40px;
+    position: relative;
+    border-radius: 10%;
+}
+.youshi .youshi-center .center-bottom ul li div::before{
+    content: "";
+    padding-top:100%;
+    display: block;
+}
+.youshi .youshi-center .center-bottom ul li div img{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 32%;
+    height: 32%;
+    transform:rotate(-45deg);
+}
+.youshi .youshi-center .center-bottom ul li div span{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    width: 32%;
+    transform:rotate(-45deg);
+    color:white;
+    font-size: 1.8em;
+    width: 100%;
+    letter-spacing:0.5em;
+}
