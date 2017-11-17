@@ -18,9 +18,7 @@ input[type="submit"], button[type="submit"] {
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 993px){
-  .product-big-title-area {
-    margin-top: 50px;
-  }
+
   .shopping-item {
     height: 50px;
     line-height: 50px;

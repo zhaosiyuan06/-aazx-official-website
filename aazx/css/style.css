@@ -779,7 +779,7 @@ ol.slide-indicators li.active {
 
 .product-big-title-area {
     padding: 30px 0;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
     background: url(../img/crossword.png) repeat scroll 0 0 #1ABC9C
 }
 
@@ -1400,4 +1400,176 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+/*information页面css样式开始*/
+.container-fluid{
+    width: 100%;
+    height:auto;
+    /*background: pink;*/
+    margin-top: 60px;
+}
+.container-fluid .container{
+    padding: 50px 0;
+    width: 65%;
+}
+.container-fluid .container .row{
+    width: 100%;
+    /*border: 1px solid blue;*/
+    padding: 0 20px;
+}
+
+.container-fluid .container .row .imgBox img{
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    margin-left: 0px;
+}
+.container-fluid .container .row h3{
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+.container-fluid .container .row p{
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+
+.advantage{
+    width: 100%;
+    height: auto;
+    background: #ddd;
+}
+.advantage .container{
+    padding: 30px 0;
+}
+.advantage .container h3{
+    text-align: center;
+    line-height: 50px;
+}
+.advantage .container .row{
+    padding: 50px 0;
+}
+
+.advantage .container .advanBox{
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    background: #1ABC9C;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    padding: 20px;
+}
+.advantage .container .advanBox.b2{
+    background: #FDC668;
+}
+.advantage .container .advanBox.b3{
+    background: #FF6D6A;
+}
+.advantage .container .advanBox.b4{
+    background:#00A5FB;
+}
+.advantage .container .advanBox img{
+    width: 40%;
+    height: 40%;
+    transform: rotate(-45deg);
+}
+.advantage .container .advanBox span{
+    display: inline-block;
+    width: 100%;
+    transform: rotate(-45deg);
+    font-size:1.4rem;
+    color: #FFFFFF;
+    letter-spacing: 0.55em;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 15px;
+}
+.history .container .col-md-3 img{
+    width: 100%;
+    height: 100%;
+}
+.history .container .row .col-md-9 p{
+   font-size:.9em;
+    margin-bottom: 30px;
+}
+.history .container .row .col-md-9 span{
+    line-height: 28px;
+    font-size: 1em;
+}
+.history .container{
+    padding: 50px 0;
+}
+.history .container h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.map .container .col-md-3 img{
+    width: 100%;
+    height: 100%;
+}
+.map .container .col-md-3 span{
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    background: #1ABC9C;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    text-align: center;
+}
+.map .container .privace ul{
+    margin-top: 20px;
+   padding: 0;
+}
+.map .container .privace ul li{
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+
+}
+.map .container .privace ul li:hover{
+    background: #1ABC9C;
+    cursor: pointer;
+}
+@media(max-width:1280px){
+    .advantage .container .advanBox{
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        background: pink;
+        transform: rotate(45deg);
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1280px){
+    .container-fluid .container .row p{
+        width: 100%;
+        line-height: 1.2em;
+        font-size:.9em;
+    }
+    .col-md-3 {
+        width: 50%;
+        margin: 40px 0;
+    }
+    .advantage .container .row {
+         padding: 0;
+    }
+}
+
+
+@media(max-width:768px){
+    .container-fluid{
+        margin-top:0;
+    }
+    .container-fluid .container .row p{
+        width: 100%;
+        line-height: 1.2em;
+        font-size: .8em;
+    }
+    .col-md-3 {
+        margin-bottom: 60px;
+    }
 }
