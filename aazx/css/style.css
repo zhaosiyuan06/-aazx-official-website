@@ -1,11 +1,13 @@
 .floatleft {
     float: left
 }
-li{
+
+li {
     list-style: none;
     text-align: center;
     background: none;
 }
+
 .floatright {
     float: right
 }
@@ -35,9 +37,11 @@ img {
     height: 253px;
     /*height: auto;*/
 }
-.right{
+
+.right {
     display: none;
 }
+
 .fix {
     overflow: hidden
 }
@@ -136,13 +140,14 @@ body {
 .logo h1 a span {
     color: #1abc9c;
 }
+
 /*.shopping-item {*/
-    /*border: 1px solid #ddd;*/
-    /*float: right;*/
-    /*font-size: 18px;*/
-    /*margin-top: 40px;*/
-    /*padding: 10px;*/
-    /*position: relative;*/
+/*border: 1px solid #ddd;*/
+/*float: right;*/
+/*font-size: 18px;*/
+/*margin-top: 40px;*/
+/*padding: 10px;*/
+/*position: relative;*/
 /*}*/
 .shopping-item {
     height: 60px;
@@ -154,9 +159,11 @@ body {
     right: 0;
     margin-right: 20px;
 }
-.shopping-item .login,.register{
+
+.shopping-item .login, .register {
     cursor: pointer;
 }
+
 .shopping-item a {
     color: #666;
 }
@@ -209,9 +216,11 @@ body {
     font-weight: 700;
     padding: 20px;
 }
-.mainmenu-area ul.navbar-nav li a:hover{
+
+.mainmenu-area ul.navbar-nav li a:hover {
     background: black;
 }
+
 .copyrights {
     text-indent: -9999px;
     height: 0;
@@ -221,7 +230,7 @@ body {
 }
 
 /*.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {*/
-    /*background: #222*/
+/*background: #222*/
 /*}*/
 
 .mainmenu-area .nav > li > a:focus {
@@ -345,7 +354,7 @@ body {
 }
 
 .promo-area {
-    background:#1abc9c;
+    background: #1abc9c;
     color: #fff;
     padding: 50px 50px;
     margin-bottom: 50px;
@@ -778,14 +787,14 @@ ol.slide-indicators li.active {
 }
 
 .product-big-title-area {
-    padding: 30px 0;
-    /*margin-top: 60px;*/
+    padding:30px 0;
+    margin-top: 60px;
     background: url(../img/crossword.png) repeat scroll 0 0 #1ABC9C
 }
 
 .product-bit-title h2 {
     font-family: raleway;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 200;
     margin: 0;
     padding: 50px 0;
@@ -966,7 +975,7 @@ form.cart {
     list-style: outside none none;
     margin: 0 0 30px;
     padding: 0;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .product-tab li {
@@ -985,7 +994,7 @@ form.cart {
     color: #222;
     display: block;
     font-size: 16px;
-    padding: 10px 30px;
+    padding: 10px 65px;
 }
 
 .product-tab li a:hover {
@@ -1336,17 +1345,19 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 .play {
     display: block;
 }
-.videoBlack{
+
+.videoBlack {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     z-index: 3;
     display: none;
 }
-.videoBox{
+
+.videoBox {
     position: fixed;
     left: 50%;
     margin-left: -500px;
@@ -1357,6 +1368,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     z-index: 4;
     /*background: red;*/
 }
+
 .backgroundImage {
     cursor: pointer;
     display: inline-block;
@@ -1370,32 +1382,37 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     margin-top: -20px;
     margin-left: -20px;
 }
+
 .PlayBig {
     background: url("../img/play1.png") no-repeat center;
     background-size: 40px 40px;
 }
-.liss ul{
-    width:104px;
+
+.liss ul {
+    width: 104px;
     text-align: center;
     padding: 0;
 }
-.liss ul li{
-    width:104px;
+
+.liss ul li {
+    width: 104px;
     text-align: center;
     line-height: 60px;
-    color: black!important;
-    background:#1abc9c;
+    color: black !important;
+    background: #1abc9c;
     padding: 0;
 }
-.liss ul li:hover{
-    width:104px;
+
+.liss ul li:hover {
+    width: 104px;
     text-align: center;
     line-height: 60px;
     padding: 0;
-    background:none;
+    background: none;
     overflow: hidden;
 }
-.liss ul li a{
+
+.liss ul li a {
     height: 50px;
     width: 100%;
     padding: 0;
@@ -1403,57 +1420,75 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 }
 
 /*information页面css样式开始*/
-.container-fluid{
+.cross-box {
     width: 100%;
-    height:auto;
-    /*background: pink;*/
+    height: 200px;
+    background: url("../img/crossword.png") 0 0 #1ABC9C;
     margin-top: 60px;
+    text-align: center;
+    line-height: 200px;
+    color: #FFFFFF;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 100;
 }
-.container-fluid .container{
+
+.container-fluid {
+    width: 100%;
+    height: auto;
+    /*background: pink;*/
+}
+
+.container-fluid .container {
     padding: 50px 0;
     width: 65%;
 }
-.container-fluid .container .row{
+
+.container-fluid .container .row {
     width: 100%;
     /*border: 1px solid blue;*/
     padding: 0 20px;
 }
 
-.container-fluid .container .row .imgBox img{
+.container-fluid .container .row .imgBox img {
     width: 100%;
     height: 100%;
     margin-top: 70px;
     margin-left: 0px;
 }
-.container-fluid .container .row h3{
+
+.container-fluid .container .row h3 {
     width: 100%;
     text-align: center;
     line-height: 50px;
 }
-.container-fluid .container .row p{
+
+.container-fluid .container .row p {
     width: 100%;
     line-height: 1.5em;
     font-size: 1em;
 }
 
-
-.advantage{
+.advantage {
     width: 100%;
     height: auto;
     background: #ddd;
 }
-.advantage .container{
+
+.advantage .container {
     padding: 30px 0;
 }
-.advantage .container h3{
+
+.advantage .container h3 {
     text-align: center;
     line-height: 50px;
 }
-.advantage .container .row{
+
+.advantage .container .row {
     padding: 50px 0;
 }
 
-.advantage .container .advanBox{
+.advantage .container .advanBox {
     margin: 0 auto;
     width: 180px;
     height: 180px;
@@ -1462,55 +1497,71 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     border-radius: 10px;
     padding: 20px;
 }
-.advantage .container .advanBox.b2{
+
+.advantage .container .advanBox.b2 {
     background: #FDC668;
 }
-.advantage .container .advanBox.b3{
+
+.advantage .container .advanBox.b3 {
     background: #FF6D6A;
 }
-.advantage .container .advanBox.b4{
-    background:#00A5FB;
+
+.advantage .container .advanBox.b4 {
+    background: #00A5FB;
 }
-.advantage .container .advanBox img{
+
+.advantage .container .advanBox img {
     width: 40%;
     height: 40%;
     transform: rotate(-45deg);
 }
-.advantage .container .advanBox span{
+
+.advantage .container .advanBox span {
     display: inline-block;
     width: 100%;
     transform: rotate(-45deg);
-    font-size:1.4rem;
+    font-size: 1.4rem;
     color: #FFFFFF;
     letter-spacing: 0.55em;
     line-height: 30px;
     text-align: center;
     margin-left: 15px;
 }
-.history .container .col-md-3 img{
+
+.history .container .col-md-3 img {
     width: 100%;
     height: 100%;
 }
-.history .container .row .col-md-9 p{
-   font-size:.9em;
+
+.history .container .row .col-md-9 p {
+    font-size: .9em;
     margin-bottom: 30px;
 }
-.history .container .row .col-md-9 span{
+
+.history .container .row .col-md-9 span {
     line-height: 28px;
     font-size: 1em;
 }
-.history .container{
+
+.history .container {
     padding: 50px 0;
 }
-.history .container h3{
+
+.history .container h3 {
     text-align: center;
     margin-bottom: 30px;
 }
-.map .container .col-md-3 img{
+
+.map {
+    margin-bottom: 50px;
+}
+
+.map .container .col-md-3 img {
     width: 100%;
     height: 100%;
 }
-.map .container .col-md-3 span{
+
+.map .container .col-md-3 span {
     display: inline-block;
     width: 100%;
     line-height: 50px;
@@ -1519,22 +1570,353 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     font-size: 1.2em;
     text-align: center;
 }
-.map .container .privace ul{
+
+.map .container .privace ul {
     margin-top: 20px;
-   padding: 0;
+    padding: 0;
 }
-.map .container .privace ul li{
+
+.map .container .privace ul li {
     list-style: none;
     line-height: 30px;
     text-align: center;
 
 }
-.map .container .privace ul li:hover{
+
+.map .container .privace ul li:hover {
     background: #1ABC9C;
     cursor: pointer;
 }
-@media(max-width:1280px){
-    .advantage .container .advanBox{
+
+.link {
+    padding-bottom: 20px;
+}
+
+.link .container .title_box {
+    width: 100%;
+    height: 52px;
+    background: url("../img/tittle_bg.png") no-repeat left;
+    line-height: 52px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.link .container span {
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background: #1ABC9C;
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.link .container .row .col-md-3 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.link .container .row .col-md-3 a {
+    color: black;
+}
+
+.link .container .row .col-md-3 a:hover {
+    color: #1ABC9C;
+}
+/*联系我们页面*/
+.contact{
+    margin-bottom: 20px;
+}
+.contact .container .col-md-10{
+    margin-left: -100px;
+}
+.contact .container .contact_title{
+    display: inline-block;
+    color: #000000;
+    font-size: 24px;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    margin: 30px 0;
+}
+.contact .container .row{
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+.contact .container .row span{
+    color:#1ABC9C;
+}
+.contact .container .col-md-10 div{
+    margin-bottom: 10px;
+}
+.contact .container .col-md-10 img{
+    width:20px;
+    height:20px;
+}
+.map span{
+    display: block;
+    font-size: 14px;
+    line-height:30px;
+}
+.map .address{
+    font-size: 20px;
+    color:#1ABC9C;
+}
+.map .address-b{
+    margin-bottom: 10px;
+}
+/*诚聘英才页面*/
+.recruit_box .container .col-md-6{
+    padding: 15px 10px;
+    height: 120px;
+    background: #f5f5f5;
+    border-right: 30px solid white;
+    margin: 20px 0px;
+}
+.recruit_box .container .col-md-6 a{
+    color: #FFFFFF;
+}
+.recruit_box .container .col-md-6 div{
+    color:#838383;
+    font-size: 14px;
+    line-height: 24px
+}
+.recruit_box .container .col-md-6 div span{
+    color: #f99d32;
+    padding-right: 14px
+}
+.recruit_box .container .col-md-6 .xiangqing{
+    width: 90px;
+    height: 26px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #949494;
+    line-height: 26px;
+    margin-top: 15px;
+}
+.recruit_box .container .col-md-6 .xiangqing:hover{
+    color: #fff;
+    background:#1ABC9C;
+    cursor: pointer;
+}
+.recruit_sec_box{
+    padding-top: 50px;
+    margin-top: 60px;
+}
+.recruit_sec_box img{
+    border: 1px solid #2f3238;
+}
+.recruit_sec_box .container{
+    margin-bottom: 30px;
+}
+.recruit_sec_box .container .col-md-9{
+    padding-left: 80px;
+}
+.recruit_sec_box .container .col-md-9 h3{
+    color: #1ABC9C;
+    font-size: 26px;
+}
+.recruit_sec_box .container .col-md-9 div{
+    line-height: 40px;
+}
+.recruit_sec_box .container .col-md-9 .fenge{
+    width: 100%;
+    border: 1px dashed #ccc;
+    margin: 20px 0;
+}
+.recruit_sec_box .container .col-md-9 p{
+    line-height: 20px;
+    font-size:15px;
+}
+.recruit_sec_box .container .col-md-9 .gangwei,.recruit_sec_box .container .col-md-9 .renzhi{
+    color: #1abc9c;
+    font-size: 16px;
+    margin: 20px 0;
+    display: inline-block;
+}
+.recruit_sec_box .container .col-md-3 h4{
+    line-height: 20px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+.recruit_sec_box .container .col-md-3 p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.recruit_sec_box .container .col-md-3 .address_box,.recruit_sec_box .container .col-md-3 .phone_box{
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.recruit_sec_box .container .col-md-3 .phone_box{
+    margin: 0;
+}
+/*news页面*/
+.news{
+    width: 65%;
+    /*background: palegoldenrod;*/
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+.news h3{
+    font-weight: 500;
+    font-size: 30px;
+    color: #1abc9c;
+    line-height: 60px;
+    border-bottom: 1px dotted #dbd4cd
+}
+.news ul{
+    padding: 0;
+}
+.news ul li{
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px dotted #dbd4cd
+}
+.news ul li span{
+    display: block;
+}
+.news ul li .row{
+    margin-top:15px;
+}
+.news ul li .row .col1{
+    margin-left: 15px;
+    margin-right:20px;
+     text-align: center;
+     float: left;
+ }
+.news ul li .row .col2{
+    margin-left: 15px!important;
+}
+
+.news ul li .row .col1 .day{
+    width: 60px;
+    background-color: #eae6e2;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    font-size: 30px;
+}
+.news ul li .row .col1 .date{
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    width: 60px;
+    background-color: #eae6e2;
+    color: #000;
+}
+
+.news ul li .row .col2 h4{
+    margin: 0;
+    margin-left: 0;
+}
+.news ul li .row .col2 h4 a{
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+}
+.news ul li .row .col2 h4 a:hover{
+    color: #1abc9c;
+}
+.news ul li .row .col2 p{
+    margin-top: 10px;
+    text-align: left;
+    color: #333;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.news_sec{
+    background: #fff;
+    padding: 30px 0px 150px;
+    position: relative;
+}
+.news_sec .xiangqing{
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px dashed #dbd4cd;
+}
+.news_sec .pager{
+    padding: 20px 20px ;
+}
+.news_sec .time{
+    color: #1abc9c;
+}
+.news_sec .time_data{
+    color: #333;
+}
+.news_sec .origin_data{
+    color: #333;
+}
+.news_sec .origin{
+    margin-left: 20px;
+    color: #1abc9c;
+}
+.news_sec .img_box{
+    display: inline-block;
+    padding: 0 20px;
+    width: 100%;
+    /*background: yellow;*/
+    text-align: center;
+}
+.news_sec h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 80px;
+    color: #6c5a54;
+    line-height: 50px;
+
+    border-bottom: 1px dashed #dbd4cd;
+}
+.news_sec div{
+    line-height: 35px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+
+.news_sec p{
+    font-size: 15px;
+    text-align: left;
+    display: block;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+/*首页广告位开始*/
+.Advertisement{
+    width: 120px;
+    height: 200px;
+    background: blue;
+    line-height: 200px;
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.Advertisement a{
+    display: inline-block;
+    border: 1px solid #1abc9c;
+}
+/*首页广告位结束*/
+@media (max-width: 1280px) {
+    .advantage .container .advanBox {
         margin: 0 auto;
         width: 150px;
         height: 150px;
@@ -1544,32 +1926,144 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     }
 }
 
-@media (min-width: 992px) and (max-width:1280px){
-    .container-fluid .container .row p{
+@media (min-width: 992px) and (max-width: 1280px) {
+
+    .recruit_sec_box .container .col-md-9{
+        padding-top: 0;
+    }
+    .map .container .privace ul li {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+
+    .container-fluid .container .row p {
         width: 100%;
         line-height: 1.2em;
-        font-size:.9em;
+        font-size: .9em;
     }
+
     .col-md-3 {
         width: 50%;
         margin: 40px 0;
     }
+
     .advantage .container .row {
-         padding: 0;
+        padding: 0;
     }
 }
-
-
-@media(max-width:768px){
-    .container-fluid{
-        margin-top:0;
-    }
-    .container-fluid .container .row p{
+@media (max-width: 992px) {
+    .news{
         width: 100%;
-        line-height: 1.2em;
+    }
+    .news ul li .row .col2{
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .product-big-title-area {
+        margin-top: 0px;
+    }
+
+    .recruit_sec_box{
+        padding-top: 0px;
+    }
+    .recruit_sec_box .container .col-md-9{
+        padding-left: 0px;
+    }
+    .contact .container .col-md-10{
+       margin-left: 0;
+    }{
+        font-size: 20px;
+        color:#1ABC9C;
+    }
+    .link .container .row .col-md-3 {
+        margin-bottom: 0px;
+    }
+
+    .advantage .container .advanBox span {
+        font-size: 16px;
+    }
+
+    .container-fluid .container {
+        width: 80%;
+    }
+
+    .cross-box {
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .map .container .privace ul li {
+        width: 25%;
+        display: inline-block;
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .container-fluid {
+        margin-top: 0;
+    }
+
+    .container-fluid .container .row p {
+        width: 100%;
+        line-height: 1.5em;
         font-size: .8em;
     }
+
     .col-md-3 {
         margin-bottom: 60px;
     }
+}
+
+@media (max-width: 414px) {
+    .news_sec{
+        padding:30px 0px 50px ;
+    }
+
+    .news_sec img{
+        width: 100%;
+        padding:0 10px;
+    }
+    .news_sec p{
+        font-size: 14px;
+    }
+    .news_sec .pager{
+        padding: 0 20px;
+    }
+    .news_sec h2{
+        padding: 0 5px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .news_sec p{
+        line-height: 24px;
+    }
+    .news_sec .origin{
+        margin-left: 10px;
+        line-height: 20px;
+    }
+    .news_sec .time{
+        margin-left: 10px;
+        line-height: 20px;
+    }
+    .recruit_sec_box{
+        padding-left: 0px;
+    }
+    .recruit_sec_box .container .col-md-9{
+        padding-left: 0px;
+    }
+    .cross-box {
+        margin-top: 0;
+    }
+
+    .container-fluid .container {
+        width: 100%;
+        padding: 0;
+    }
+
 }

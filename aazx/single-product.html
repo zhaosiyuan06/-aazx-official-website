@@ -4,40 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>详情页</title>
-    <!-- Bootstrap -->
+    <title>产品详情</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
-<div class="site-branding-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="logo">
-                    <h1><a href="index.html">爱耳<span>在线</span></a></h1>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="shopping-item login">
-                    <a href="#">登录/注册</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- End site branding area -->
-<div class="mainmenu-area">
+<!--头部开始-->
+<div class="mainmenu-area" style="height: 60px">
     <div class="container">
         <div class="row">
             <div class="navbar-header">
@@ -47,21 +27,40 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <div class="right">
+                    <img src="img/loginin.png" alt="" class="loginin">
+                </div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">首页</a></li>
-                    <li class="active"><a href="shop.html">助听器产品</a></li>
-                    <li><a href="#">最新动态</a></li>
+                    <li style="background: #222"><a href="index.html">爱尔在线</a></li>
+                    <li><a href="shop.html">助听器产品</a></li>
+                    <li><a href="news.html">最新动态</a></li>
                     <li><a href="#">知识专栏</a></li>
                     <li><a href="#">医疗服务</a></li>
-                    <li><a href="contact.html">关于我们</a></li>
-                    <li><a href="#">联系我们</a></li>
+                    <li><a href="posts.html">交流中心</a></li>
+                    <li class="liss">
+                        <a href="#">关于我们</a>
+                        <ul style="display:none">
+                            <li><a href="information.html">公司简介</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="recruit.html">诚聘英才</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">联系我们</a></li>-->
+                    <!--<li><a href="#"></a></li>-->
                 </ul>
+                <div class="shopping-item ">
+                    <span class="login">登录</span>
+                    <span>/</span>
+                    <span class="register">注册</span>
+                </div>
             </div>
+
         </div>
     </div>
 </div> <!-- End mainmenu area -->
+<!--头部结束-->
 <div class="product-big-title-area">
     <div class="container">
         <div class="row">
@@ -74,10 +73,103 @@
     </div>
 </div>
 <div class="single-product-area">
-    <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-9">
+                <div class="product-content-right">
+                    <div class="product-breadcroumb">
+                        <a href="index.html">首页</a>
+                        <a href="shop.html">助听器产品</a>
+                        <a href="single-product.html">助听器1</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="product-images">
+                                <a href="single-product.html">
+                                    <div class="product-main-img">
+                                        <img src="img/product1.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="product-gallery">
+                                    <img src="img/product1.jpg" alt="">
+                                    <img src="img/product2.jpg" alt="">
+                                    <img src="img/product3.jpg" alt="">
+                                    <img src="img/product4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="product-inner">
+                                <h2 class="product-name">助听器1</h2>
+                                <div class="product-inner-price">
+                                    <ins>$700.00</ins>
+                                    <del>$800.00</del>
+                                </div>
+
+                                <form action="" class="cart">
+                                    <div class="quantity">
+                                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1"
+                                               name="quantity" min="1" step="1">
+                                    </div>
+                                    <button class="add_to_cart_button" type="submit"><a href="cart.html"
+                                                                                        style="color: #fff">加入购物车</a>
+                                    </button>
+                                </form>
+
+                                <!--<div class="product-inner-category">-->
+                                    <!--<p>类型: <a href="">电子产品</a>. 标签: <a href="">XXXXX</a>, <a href="">最好</a>, <a href="">销售</a>,-->
+                                        <!--<a href="">XXX</a>. </p>-->
+                                <!--</div>-->
+
+                                <div role="tabpanel">
+                                    <ul class="product-tab" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home"
+                                                                                  role="tab" data-toggle="tab">产品描述</a>
+                                        </li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                                                   data-toggle="tab">产品评价</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                            <h2>产品描述</h2>
+                                            <p>
+                                                声音是由物体振动产生，正在发声的物体叫声源。声音只是压力波通过空气的运动。压力波振动内耳的小骨头（听小骨），这些振动被转化为微小的电子脑波，它就是我们觉察到的声音。自然，在声波音调低、移动缓慢并足够大时，我们实际上可以“感觉”到气压波振动身体。</p>
+
+                                            <p>
+                                                助听器是一个小型扩音器，把原本听不到的声音加以扩大，再利用听障者的残余听力，使声音能送到大脑听觉中枢，而感觉到声音。主要由传声器、放大器、耳机、电源和音量调控五部分组成。助听器按传导方式分为气导助听器和骨导助听器.</p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                                            <!--<h2>回顾</h2>-->
+                                            <div class="submit-review">
+                                                <p><label for="name">姓名</label> <input name="name" type="text"></p>
+                                                <p><label for="email">邮箱</label> <input name="email" type="email"></p>
+                                                <div class="rating-chooser">
+                                                    <p>产品等级</p>
+                                                    <div class="rating-wrap-post">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <p><label for="review">您的评论</label> <textarea name="review" id=""
+                                                                                              cols="30"
+                                                                                              rows="10"></textarea></p>
+                                                <p><input type="submit" value="提交"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
                 <div class="single-sidebar">
                     <h2 class="sidebar-title">搜索相关产品</h2>
                     <form action="">
@@ -130,109 +222,15 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-8">
-                <div class="product-content-right">
-                    <div class="product-breadcroumb">
-                        <a href="index.html">首页</a>
-                        <a href="shop.html">助听器产品</a>
-                        <a href="single-product.html">助听器1</a>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="product-images">
-                                <a href="single-product.html">
-                                    <div class="product-main-img">
-                                        <img src="img/product1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="product-gallery">
-                                    <img src="img/product1.jpg" alt="">
-                                    <img src="img/product2.jpg" alt="">
-                                    <img src="img/product3.jpg" alt="">
-                                    <img src="img/product4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="product-inner">
-                                <h2 class="product-name">助听器1</h2>
-                                <div class="product-inner-price">
-                                    <ins>$700.00</ins>
-                                    <del>$800.00</del>
-                                </div>
-
-                                <form action="" class="cart">
-                                    <div class="quantity">
-                                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1"
-                                               name="quantity" min="1" step="1">
-                                    </div>
-                                    <button class="add_to_cart_button" type="submit"><a href="cart.html"
-                                                                                        style="color: #fff">加入购物车</a>
-                                    </button>
-                                </form>
-
-                                <div class="product-inner-category">
-                                    <p>类型: <a href="">电子产品</a>. 标签: <a href="">XXXXX</a>, <a href="">最好</a>, <a href="">销售</a>,
-                                        <a href="">XXX</a>. </p>
-                                </div>
-
-                                <div role="tabpanel">
-                                    <ul class="product-tab" role="tablist">
-                                        <li role="presentation" class="active"><a href="#home" aria-controls="home"
-                                                                                  role="tab" data-toggle="tab">产品描述</a>
-                                        </li>
-                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
-                                                                   data-toggle="tab">产品评价</a></li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                            <h2>产品描述</h2>
-                                            <p>
-                                                声音是由物体振动产生，正在发声的物体叫声源。声音只是压力波通过空气的运动。压力波振动内耳的小骨头（听小骨），这些振动被转化为微小的电子脑波，它就是我们觉察到的声音。自然，在声波音调低、移动缓慢并足够大时，我们实际上可以“感觉”到气压波振动身体。</p>
-
-                                            <p>
-                                                助听器是一个小型扩音器，把原本听不到的声音加以扩大，再利用听障者的残余听力，使声音能送到大脑听觉中枢，而感觉到声音。主要由传声器、放大器、耳机、电源和音量调控五部分组成。助听器按传导方式分为气导助听器和骨导助听器.</p>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="profile">
-                                            <!--<h2>回顾</h2>-->
-                                            <div class="submit-review">
-                                                <p><label for="name">姓名</label> <input name="name" type="text"></p>
-                                                <p><label for="email">邮箱</label> <input name="email" type="email"></p>
-                                                <div class="rating-chooser">
-                                                    <p>产品等级</p>
-                                                    <div class="rating-wrap-post">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                    </div>
-                                                </div>
-                                                <p><label for="review">您的评论</label> <textarea name="review" id=""
-                                                                                              cols="30"
-                                                                                              rows="10"></textarea></p>
-                                                <p><input type="submit" value="提交"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
+<!--登录-->
 <div class="zhezhao">
     <div class="htmleaf-container">
         <div class="signin">
             <div class="close">
-                <img src="images/close.png" alt="">
+                <img src="img/close.png" alt="">
             </div>
             <form class="form-signin" role="form" style="margin-top:140px">
                 <input type="text" class="form-control" placeholder="用户名" required autofocus/>
@@ -245,19 +243,35 @@
         </div>
     </div>
 </div>
+<!--注册-->
+<div class="zhezhao_register">
+    <div class="htmleaf-container">
+        <div class="signin">
+            <div class="close">
+                <img src="img/close.png" alt="">
+            </div>
+            <form class="form-signin" role="form" style="margin-top:140px">
+                <input type="text" class="form-control" placeholder="用户名" required autofocus/>
+                <input type="password" class="form-control" placeholder="密码" required/>
+                <input type="text" class="form-control" placeholder="邮箱" required/>
+                <button class="btn btn-lg btn-warning btn-block" type="submit">注册</button>
+                <!--<label class="checkbox">-->
+                <!--<input type="checkbox" value="remember-me">记住我-->
+                <!--</label>-->
+                <span style="line-height: 50px">已经有账号？直接<span style="color: white;cursor: pointer;font-size: 18px;"
+                                                              class="logins"> 登录</span></span>
+            </form>
+        </div>
+    </div>
+</div>
 <div style="margin: 0;padding: 0;">
     <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="footer.html" height="530px"
             width="100%"></iframe>
 </div>
-<!-- Bootstrap JS form CDN -->
+<script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
-<!-- jQuery sticky menu -->
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
-<script src="js/jquery-1.11.1.min.js"></script>
-
-<!-- Main Script -->
 <script src="js/main.js"></script>
 </body>
 </html>

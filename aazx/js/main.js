@@ -47,6 +47,20 @@ $(function(){
     $(".liss").on("mouseleave",function(){
         $(this).children("ul").css("display","none")
     })
+    //广告位
+    var i=1;
+    setInterval(function(){
+        changeImg()
+    },2000)
+    function changeImg(){
+             i=i+1;
+             if(i>=7){
+                 i=1
+             }
+            $(".Advertisement img").attr("src","img/product"+i+".jpg")
+
+    }
+    changeImg()
     //shop页的刷选
 
     $(":radio").click(function(){
@@ -65,10 +79,7 @@ $(function(){
         });
     }
 
-
-
-    
-	$(".mainmenu-area").sticky({topSpacing:0});
+	// $(".mainmenu-area").sticky({topSpacing:0});
     $('.product-carousel').owlCarousel({
         loop:true,
         nav:true,

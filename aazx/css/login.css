@@ -51,7 +51,7 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 .signin {
 	width:477px;
 	height:479px;
-	background:url(../images/login_bg.png) no-repeat;
+	background:url(../img/login_bg.png) no-repeat;
 	margin:0 auto;
 	position:absolute;
 	top:50%;
@@ -319,14 +319,14 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 .form-signin input[type="text"] {
   margin-bottom: 14px;
   border-radius: 0;
-  background: url(../images/login_user.png) 0 0 #bdbdbd no-repeat;
+  background: url(../img/login_user.png) 0 0 #bdbdbd no-repeat;
   padding-left:60px;
   color:#FFFFFF;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-radius: 0;
-  background: url(../images/login_pas.png) 0 0 #bdbdbd no-repeat;
+  background: url(../img/login_pas.png) 0 0 #bdbdbd no-repeat;
   padding-left:60px;
   color:#FFFFFF;
 }
@@ -337,7 +337,7 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 	.signin {
 		width: 280px;
 		height: 400px;
-		background: url(../images/login_bg.png) no-repeat center;
+		background: url(../img/login_bg.png) no-repeat center;
 		background-size:280px 400px;
 		margin: 0 auto;
 		position: absolute;
@@ -366,9 +366,9 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 		padding: 0;
 	}
 	.form-signin input[type="text"] {
-		background: url(../images/login_user.png) 0 -5px #bdbdbd no-repeat;
+		background: url(../img/login_user.png) 0 -5px #bdbdbd no-repeat;
 	}
 	.form-signin input[type="password"] {
-		background: url(../images/login_pas.png) 0 -5px #bdbdbd no-repeat;
+		background: url(../img/login_pas.png) 0 -5px #bdbdbd no-repeat;
 	}
 }

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>交流中心</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <style type="text/css">
+        body, div, h2, h3, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            color: #333;
+            background: #f5f5f5;
+            font: 12px/1.5 \5b8b\4f53;
+        }
+
+        #msgBox {
+            width:60%;
+            background: #fff;
+            border-radius: 5px;
+            margin: 100px auto;
+            padding: 30px 30px 0 30px;
+        }
+
+        #msgBox form h2 {
+            font-weight: 400;
+            font: 400 16px/1.5 \5fae\8f6f\96c5\9ed1;
+        }
+
+        #msgBox form {
+            background: url(img/boxBG.jpg) repeat-x 0 bottom;
+            padding: 0 20px 15px;
+        }
+
+        #userName, #conBox {
+            color: #777;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            background: #fff url(img/inputBG.png) repeat-x;
+            padding: 3px 5px;
+            font: 14px/1.5 arial;
+        }
+
+        #userName.active, #conBox.active {
+            border: 1px solid #7abb2c;
+        }
+
+        #userName {
+            height: 20px;
+        }
+
+        #conBox {
+            width: 448px;
+            resize: none;
+            height: 65px;
+            overflow: auto;
+        }
+
+        #msgBox form div {
+            position: relative;
+            color: #999;
+            margin-top: 10px;
+        }
+
+        #msgBox img {
+            border-radius: 3px;
+        }
+
+        #face {
+            position: absolute;
+            top: 0;
+            left: 172px;
+        }
+
+        #face img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin-right: 6px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        #face img.hover, #face img.current {
+            width: 28px;
+            height: 28px;
+            border: 1px solid #f60;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        #sendBtn {
+            border: 0;
+            width: 112px;
+            height: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            background: url(img/btn.png) no-repeat;
+        }
+
+        #sendBtn.hover {
+            background-position: 0 -30px;
+        }
+
+        #msgBox form .maxNum {
+            font: 26px/30px Georgia, Tahoma, Arial;
+            padding: 0 5px;
+        }
+
+        #msgBox .lists {
+            padding: 10px;
+        }
+        #msgBox .lists img{
+            width: 48px;
+            height: 48px;
+        }
+        #msgBox .lists h3 {
+            position: relative;
+            height: 33px;
+            font-size: 14px;
+            font-weight: 400;
+            background: #e3eaec;
+            border: 1px solid #dee4e7;
+        }
+
+        #msgBox .lists h3 span {
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            background: #fff;
+            line-height: 28px;
+            display: inline-block;
+            padding: 0 15px;
+        }
+
+        #msgBox .lists ul {
+            overflow: hidden;
+            zoom: 1;
+        }
+
+        #msgBox .lists ul li {
+            float: left;
+            clear: both;
+            width: 100%;
+            border-bottom: 1px dashed #d8d8d8;
+            padding: 10px 0;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        #msgBox .lists ul li.hover {
+            background: #f5f5f5;
+        }
+
+        #msgBox .lists .userPic {
+            float: left;
+            width: 50px;
+            height: 50px;
+            display: inline;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        #msgBox .lists .content {
+            float: left;
+            width: 400px;
+            font-size: 14px;
+            margin-left: 10px;
+            font-family: arial;
+            word-wrap: break-word;
+        }
+
+        #msgBox .lists .userName {
+            display: inline;
+            padding-right: 5px;
+        }
+
+        #msgBox .lists .userName a {
+            color: #2b4a78;
+        }
+
+        #msgBox .lists .msgInfo {
+            display: inline;
+            word-wrap: break-word;
+        }
+
+        #msgBox .lists .times {
+            color: #889db6;
+            font: 12px/18px arial;
+            margin-top: 5px;
+            overflow: hidden;
+            zoom: 1;
+        }
+
+        #msgBox .lists .times span {
+            float: left;
+        }
+
+        #msgBox .lists .times a {
+            float: right;
+            color: #889db6;
+            display: none;
+        }
+
+        .tr {
+            overflow: hidden;
+            zoom: 1;
+        }
+
+        .tr p {
+            float: right;
+            line-height: 30px;
+        }
+
+        .tr * {
+            float: left;
+        }
+        #userName{
+            width: 80%;
+            height: 36px;
+        }
+        #conBox{
+            width: 80%;
+            height: 80px;
+        }
+        form{
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            #userName{
+                width: 100%;
+                height: 30px;
+            }
+            #conBox{
+                width: 100%;
+                height: 80px;
+            }
+            #msgBox {
+                width:80%;
+            }
+        }
+        @media (max-width: 414px) {
+            #msgBox {
+                width: 85%;
+                margin: 10px auto;
+                padding: 0;
+            }
+            #msgBox .lists .content{
+                width: 260px;
+                font-size: 12px;
+            }
+            form{
+                width: 100%;
+            }
+        }
+        @media (max-width: 375px) {
+            form{
+                width: 100%;
+            }
+            #msgBox .lists .content{
+                width: 240px;
+                font-size: 12px;
+            }
+            #msgBox .userPic{
+                width: 36px!important;
+                height: 36px!important;
+            }
+            #msgBox img{
+                width: 36px!important;
+                height: 36px!important;
+            }
+        }
+    </style>
+    <style>
+        @media (max-width: 1280px) {
+            #msgBox .lists .container p{
+                font-size: 12px!important;
+                margin-bottom: 8px;
+            }
+        }
+        @media (max-width: 768px) {
+            .msgInfo{
+                font-size: 14px!important;
+                text-align: center;
+                width: 100%;
+                display: inline-block!important;
+            }
+        }
+        #msgBox .lists .container p{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+<!--头部开始-->
+<div class="mainmenu-area" style="height: 60px">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="right">
+                    <img src="img/loginin.png" alt="" class="loginin">
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">爱尔在线</a></li>
+                    <li><a href="shop.html">助听器产品</a></li>
+                    <li><a href="news.html">最新动态</a></li>
+                    <li><a href="#">知识专栏</a></li>
+                    <li><a href="#">医疗服务</a></li>
+                    <li><a href="posts.html" style="background: #222">交流中心</a></li>
+                    <li class="liss">
+                        <a href="#">关于我们</a>
+                        <ul style="display:none">
+                            <li><a href="information.html">公司简介</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="recruit.html">诚聘英才</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="shopping-item ">
+                    <span class="login">登录</span>
+                    <span>/</span>
+                    <span class="register">注册</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> <!-- End mainmenu area -->
+<!--头部结束-->
+<div id="msgBox">
+    <div class="lists">
+        <h3><span>Ta在说</span></h3>
+        <div class="container" style="border: 1px solid #e3eaec;width:98%;margin: 0 auto;padding: 10px 5px;margin-bottom: 8px;border-radius: 5px">
+            <div class="col-md-1">
+                <span>永不下线</span>
+                <img src="img/face.gif" alt="">
+                <span style="font-size: 12px;margin-left: -6px;line-height: 24px;color: #1abc9c">2017-11-23</span>
+            </div>
+            <div class="col-md-11">
+                <div class="msgInfo" style="font-size: 16px;font-weight:600;color:#333;line-height:38px">新增选择头像功能。</div>
+                <p>&nbsp;&nbsp;转眼从新疆回来一个多月了，回顾新疆之行，如果你问我哪一天最累，我会告诉你：从小黑湖到禾木。如果你问我哪一天的路最难走，我也会告诉你：从小黑湖到禾木。如果你问我哪一天的路最险，我同样告诉你：从小黑湖到禾木。如果你问我哪一天的路最原始，我仍然告诉你：从小黑湖到禾木。如果你间我哪一天的路最刺激，我还是告诉你：从小黑湖到禾木。这不是夸张，不是忽悠，更不是胡说八道。这次喀纳斯之行 ，给我的总印象是风光优美，生态良好， 山势平缓、马道宽阔，穿越难度不大。唯有小黑湖到禾木的山，坡陡沟深，山势险恶，极象我熟悉的太行山。唯有小黑湖到禾木的路，崎岖陡峭，泥泞湿滑，比什么小五台、鳌太的路有过之而无不及。
+                </p>
+                <p>&nbsp;&nbsp;从新疆回来一个多月了，回顾新疆之行，如果你问我哪一天最累，我会告诉你：从小黑湖到禾木。如果你问我哪一天的路最原始，我仍然告诉你：从小黑湖到禾木。如果你间我哪一天的路最刺激，我还是告诉你：从小黑湖到禾木。这不是夸张，不是忽悠，更不是胡说八道。这次喀纳斯之行 ，给我的总印象是风光优美，生态良好， 山势平缓、马道宽阔，穿越难度不大。唯有小黑湖到禾木的山，坡陡沟深，山势险恶，极象我熟悉的太行山。唯有小黑湖到禾木的路，崎岖陡峭，泥泞湿滑，比什么小五台、鳌太的路有过之而无不及。
+                </p>
+            </div>
+        </div>
+    </div>
+    <form>
+        <h2>您在说：</h2>
+        <div>
+            <input id="userName" class="f-text" value="" >
+        </div>
+        <div><textarea id="conBox" class="f-text"></textarea></div>
+        <div class="tr">
+            <p>
+                <span class="countTxt">还能输入</span><strong class="maxNum">140</strong><span>个字</span>
+                <input id="sendBtn" type="button" value="" title="快捷键 Ctrl+Enter"/>
+            </p>
+        </div>
+    </form>
+</div>
+<!--登录-->
+<div class="zhezhao">
+    <div class="htmleaf-container">
+        <div class="signin">
+            <div class="close">
+                <img src="img/close.png" alt="">
+            </div>
+            <form class="form-signin" role="form" style="margin-top:140px">
+                <input type="text" class="form-control" placeholder="用户名" required autofocus/>
+                <input type="password" class="form-control" placeholder="密码" required/>
+                <button class="btn btn-lg btn-warning btn-block" type="submit">登录</button>
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me">记住我
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+<!--注册-->
+<div class="zhezhao_register">
+    <div class="htmleaf-container">
+        <div class="signin">
+            <div class="close">
+                <img src="img/close.png" alt="">
+            </div>
+            <form class="form-signin" role="form" style="margin-top:140px">
+                <input type="text" class="form-control" placeholder="用户名" required autofocus/>
+                <input type="password" class="form-control" placeholder="密码" required/>
+                <input type="text" class="form-control" placeholder="邮箱" required/>
+                <button class="btn btn-lg btn-warning btn-block" type="submit">注册</button>
+                <!--<label class="checkbox">-->
+                <!--<input type="checkbox" value="remember-me">记住我-->
+                <!--</label>-->
+                <span style="line-height: 50px">已经有账号？直接<span style="color: white;cursor: pointer;font-size: 18px;"
+                                                              class="logins"> 登录</span></span>
+            </form>
+        </div>
+    </div>
+</div>
+<!--尾部开始-->
+<div style="margin: 0;padding: 0;">
+    <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="footer.html" height="535px"
+            width="100%"></iframe>
+</div>
+<!--尾部结束-->
+</body>
+</html>
