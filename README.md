@@ -32,3 +32,4 @@ Front end code of  aazx official website
 可以给出各种与耳鼻喉有关的网站的链接<br>
 ## 14.在线客服 <br> 
 给出客服与客户的对话框。   <br>
+[百度](http://baidu.com)
