@@ -182,17 +182,19 @@
         }
 
         #msgBox .lists .content {
+            line-height: 24px;
             float: left;
-            width: 400px;
+            width: 80%;
             font-size: 14px;
             margin-left: 10px;
             font-family: arial;
-            word-wrap: break-word;
+
         }
 
         #msgBox .lists .userName {
             display: inline;
             padding-right: 5px;
+            float: left;
         }
 
         #msgBox .lists .userName a {
@@ -200,20 +202,30 @@
         }
 
         #msgBox .lists .msgInfo {
-            display: inline;
-            word-wrap: break-word;
-        }
+            width: 80%;
+            /*word-wrap: break-word;*/
+            /*overflow:hidden; !*超出的部分隐藏起来。*!*/
+            /*white-space:nowrap;!*不显示的地方用省略号...代替*!*/
+            /*text-overflow:ellipsis;!* 支持 IE *!*/
+            /*-webkit-line-clamp: 2; !** 显示的行数 **!*/
+            overflow:hidden;
+            text-overflow:ellipsis;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:2;
 
+        }
         #msgBox .lists .times {
+            display: inline-block;
             color: #889db6;
             font: 12px/18px arial;
             margin-top: 5px;
-            overflow: hidden;
             zoom: 1;
         }
 
         #msgBox .lists .times span {
-            float: left;
+        display: block;
+
         }
 
         #msgBox .lists .times a {
@@ -342,9 +354,9 @@
         <ul>
             <li>
                 <div class="userPic"><img src="img/face1.gif" style="width: 48px;height: 48px"/></div>
-                <div class="content">
+                <div class="content" >
                     <div class="userName"><a href="javascript:;">永不上线</a>:</div>
-                    <div class="msgInfo"><a href="posts_sec.html">新增删除广播功能。</a></div>
+                    <div class="msgInfo"><a href="posts_sec.html">新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能</a></div></br>
                     <div class="times"><span>07月05日 15:14</span><a class="del" href="javascript:;">删除</a></div>
                 </div>
             </li>

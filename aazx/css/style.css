@@ -54,10 +54,22 @@ h5,
 h6 {
     font-weight: 700;
     margin: 0 0 15px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currentlyot supported by any browser */
 }
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currentlyot supported by any browser */
 }
 
 .header-area {
@@ -352,14 +364,35 @@ body {
     color: #fff;
     border: 1px solid #fff
 }
-
+.product-upper img{
+    width:100%;
+    margin: 0 auto;
+}
 .promo-area {
     background: #1abc9c;
     color: #fff;
     padding: 50px 50px;
     margin-bottom: 50px;
 }
+.video_module{
+    width: 100%;
+    height: 100%;
+    background: #1abc9c;
+    padding-bottom: 50px;
+}
+.video_module h2{
+    color: #FFFFFF;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currentlyot supported by any browser */
+}
+.video_module .container{
 
+    padding: 20px 0;
+}
 .brands-area {
     background: none repeat scroll 0 0 #1abc9c;
     color: #fff;
@@ -493,7 +526,7 @@ body {
 }
 
 .single-product:hover .product-hover a.view-details-link {
-    bottom: 32%;
+    bottom: 40%;
 }
 
 .single-product:hover .product-hover:after {
@@ -1402,9 +1435,23 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     background: #1abc9c;
     padding: 0;
 }
-
+@media (max-width:767px) {
+    .liss ul {
+        width: 100% !important;
+        text-align: center;
+        padding: 0;
+    }
+    .liss ul li {
+        width: 100%;
+        text-align: center;
+        line-height: 60px;
+        color: black !important;
+        background: #1abc9c;
+        padding: 0;
+    }
+}
 .liss ul li:hover {
-    width: 104px;
+    width: 100%;
     text-align: center;
     line-height: 60px;
     padding: 0;
@@ -1988,13 +2035,70 @@ ul, li {
     background: blue;
     line-height: 200px;
     position: fixed;
+    /*left: 0px;*/
+    /*top: 15%;*/
+    text-align: center;
+    /*color: #FFFFFF;*/
+    cursor: pointer;
+    display: none;
+    z-index: 222;
+}
+.Advertisement .close{
+    width: 20px;
+    height: 20px;
+    background: url("../img/closes.png") no-repeat center ;
+    background-size: 10px 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1!important;
+}
+.advertise ul li:nth-child(1){
+    position: fixed;
     left: 0px;
-    top: 50%;
+    top: 15%;
+}
+.advertise ul li:nth-child(2){
+    position: fixed;
+    left: 0px;
+    top: 40%;
+}
+.advertise ul li:nth-child(3){
+    width: 150px;
+    height: 200px;
+    background: blue;
+    line-height: 200px;
+    position: fixed;
+    left: 0px;
+    top: 65%;
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
 }
-
+/*.a2{*/
+    /*width: 150px;*/
+    /*height: 200px;*/
+    /*background: blue;*/
+    /*line-height: 200px;*/
+    /*position: fixed;*/
+    /*left: 0px;*/
+    /*top: 40%;*/
+    /*text-align: center;*/
+    /*color: #FFFFFF;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.a3{*/
+    /*width: 150px;*/
+    /*height: 200px;*/
+    /*background: blue;*/
+    /*line-height: 200px;*/
+    /*position: fixed;*/
+    /*left: 0px;*/
+    /*top: 65%;*/
+    /*text-align: center;*/
+    /*color: #FFFFFF;*/
+    /*cursor: pointer;*/
+/*}*/
 .Advertisement a {
     display: inline-block;
     border: 1px solid #1abc9c;

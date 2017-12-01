@@ -47,21 +47,55 @@ $(function(){
         $(this).children("ul").css("display","none")
     })
     //广告位
-    var i=1;
-    setInterval(function(){
-        changeImg()
-    },2000)
+    // var i=1;
+    // setInterval(function(){
+    //     changeImg()
+    // },2000)
+    // function changeImg(){
+    //      i=i+1;
+    //      if(i>=7){
+    //          i=1
+    //      }
+    //     $(".Advertisement img").attr("src","img/product"+i+".jpg")
+    // }
     function changeImg(){
-             i=i+1;
-             if(i>=7){
-                 i=1
-             }
-            $(".Advertisement img").attr("src","img/product"+i+".jpg")
-
+        for(var i=1;i<4;i++){
+            var index=i;
+            $(".advertise ul").append(" <li class=\"Advertisement\">"+"<a href=\"www.baodu.com\">"+"<img src=\"img/product"+index+".jpg\" alt=\"\">"+"</a>"+" <div class=\"close\"></div>"+"</li>" )
+            // $(".Advertisement img").eq(index).attr("src","img/product"+(i+1)+".jpg")
+        }
     }
     changeImg();
+    //关闭广告
+    $(".close").on("click",function(){
+        $(this).parent("li.Advertisement").css("display","none");
+            //关闭以后
+        setInterval(function(){
+            scrollimg()
+        },5000)
+    })
 
-    //shop页的刷选
+    //滚动加载
+    function scrollimg(){
+        $(window).scroll(function(){
+            //页面的y轴滚动距离
+            var sT = $(window).scrollTop();
+            //页面可视区域的高度
+            var CH = $(window).height();
+            //获取当前元素距离文档顶部的偏移量
+            var OT = $(".owl-stage").offset().top;
+            //如果图片即将要展现在屏幕上的话
+            if(OT+400 < sT+CH){
+                $(".Advertisement").css("display","block")
+            }else{
+                $(".Advertisement").css("display","none")
+            }
+        })
+    }
+
+    scrollimg()
+
+        //shop页的刷选
     $(":radio").click(function(){
         var data=$(this).val()
         checkShops(data)
