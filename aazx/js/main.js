@@ -68,11 +68,12 @@ $(function(){
     changeImg();
     //关闭广告
     $(".close").on("click",function(){
+        $(this).addClass("select")
         $(this).parent("li.Advertisement").css("display","none");
             //关闭以后
-        setInterval(function(){
-            scrollimg()
-        },5000)
+        // setInterval(function(){
+        //     scrollimg()
+        // },5000)
     })
 
     //滚动加载
@@ -85,14 +86,17 @@ $(function(){
             //获取当前元素距离文档顶部的偏移量
             var OT = $(".owl-stage").offset().top;
             //如果图片即将要展现在屏幕上的话
-            if(OT+400 < sT+CH){
-                $(".Advertisement").css("display","block")
+            if(OT+400<sT+CH){
+                if($(".close").hasClass("select")){
+                    $(this).parent("li.Advertisement").css("display","none");
+                }else{
+                    $(".Advertisement").css("display","block")
+                }
             }else{
                 $(".Advertisement").css("display","none")
             }
         })
     }
-
     scrollimg()
 
         //shop页的刷选
@@ -117,6 +121,13 @@ $(function(){
         $(this).addClass('selected').siblings().removeClass('selected');
         $(".knowledge_box .col-md-10 > .knowledges").eq(index).show().siblings().hide();
     })
+
+//   顶部下拉
+$(".mainmenu-area .navbar-collapse ul li").on("click",function(){
+    var index=$(this).index();
+    $(".mainmenu-area .navbar-collapse ul li").eq(index).addClass('backgroundColor').siblings().removeClass('backgroundColor');
+})
+
 
 //     //分页
 //     getPage(1);

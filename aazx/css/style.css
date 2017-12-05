@@ -245,10 +245,6 @@ body {
 /*background: #222*/
 /*}*/
 
-.mainmenu-area .nav > li > a:focus {
-    color: #000
-}
-
 .slider-area {
     clear: both
 }
@@ -311,11 +307,11 @@ body {
 }
 
 .slide-two {
-    background-image: url(../img/slide-2.jpg)
+    background-image: url(../img/slide-one.jpg)
 }
 
 .slide-three {
-    background-image: url(../img/slide-3.jpg)
+    background-image: url(../img/slide-one.jpg)
 }
 
 .slide-text {
@@ -1435,7 +1431,21 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
     background: #1abc9c;
     padding: 0;
 }
-@media (max-width:767px) {
+@media (max-width:768px) {
+    .spans{
+        display: none;
+    }
+    .videoBox {
+        position: fixed;
+        left: 50%;
+        margin-left: -350px;
+        top: 50%;
+        margin-top: -200px;
+        width: 700px;
+        height: 400px;
+        z-index: 4;
+        /*background: red;*/
+    }
     .liss ul {
         width: 100% !important;
         text-align: center;
@@ -2387,6 +2397,17 @@ ul, li {
 }
 
 @media (max-width: 414px) {
+    .videoBox {
+        position: fixed;
+        left: 50%;
+        margin-left: -210px;
+        top: 50%;
+        margin-top: -150px;
+        width: 400px;
+        height: 300px;
+        z-index: 4;
+        /*background: red;*/
+    }
     .news_sec {
         padding: 30px 0px 50px;
     }
@@ -2441,5 +2462,79 @@ ul, li {
         width: 100%;
         padding: 0;
     }
+}
+.backgroundColor{
+    color: #FFFFFF!important;
+    background: #222!important;
 
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    height: 800px;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.zhe{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.spans{
+    position: absolute;
+    top: 50%;
+    margin-top: -160px;
+    right: 300px;
+    width: 555px;
+    height: 325px;
+    background: rgba(0,0,0,0.6);
+    color: rgba(255,255,255,1);
+    padding: 20px;
+}
+.spans h3{
+    text-align: left;
+    font-size: 34px;
+    font-weight: 400;
+}
+.spans p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.spans span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    border: 1px solid transparent;
+    -webkit-transition: all .5s ease-in 0s;
+    -moz-transition: all .5s ease-in 0s;
+    -o-transition: all .5s ease-in 0s;
+    transition: all .5s ease-in 0s;
+    background: #1abc9c;
+    padding: 10px;
+    text-align: left!important;
+    margin-top: 20px;
 }

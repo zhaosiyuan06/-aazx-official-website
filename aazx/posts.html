@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.ellipsis.js"></script>
+    <script src="js/jquery.ellipsis.unobtrusive.js"></script>
     <script src="js/main.js"></script>
     <style type="text/css">
         body, div, h2, h3, ul, li, p {
@@ -46,19 +48,19 @@
             font: 400 16px/1.5 \5fae\8f6f\96c5\9ed1;
         }
 
-        #msgBox form {
-            background: url(img/boxBG.jpg) repeat-x 0 bottom;
-            padding: 0 20px 15px;
-        }
+        /*#msgBox form {*/
+            /*background: url(img/boxBG.jpg) repeat-x 0 bottom;*/
+            /*padding: 0 20px 15px;*/
+        /*}*/
 
-        #userName, #conBox {
-            color: #777;
-            border: 1px solid #d0d0d0;
-            border-radius: 6px;
-            background: #fff url(img/inputBG.png) repeat-x;
-            padding: 3px 5px;
-            font: 14px/1.5 arial;
-        }
+        /*#userName, #conBox {*/
+            /*color: #777;*/
+            /*border: 1px solid #d0d0d0;*/
+            /*border-radius: 6px;*/
+            /*background: #fff url(img/inputBG.png) repeat-x;*/
+            /*padding: 3px 5px;*/
+            /*font: 14px/1.5 arial;*/
+        /*}*/
 
         #userName.active, #conBox.active {
             border: 1px solid #7abb2c;
@@ -202,17 +204,20 @@
         }
 
         #msgBox .lists .msgInfo {
-            width: 80%;
             /*word-wrap: break-word;*/
             /*overflow:hidden; !*超出的部分隐藏起来。*!*/
             /*white-space:nowrap;!*不显示的地方用省略号...代替*!*/
             /*text-overflow:ellipsis;!* 支持 IE *!*/
             /*-webkit-line-clamp: 2; !** 显示的行数 **!*/
-            overflow:hidden;
-            text-overflow:ellipsis;
-            display:-webkit-box;
-            -webkit-box-orient:vertical;
-            -webkit-line-clamp:2;
+            /*overflow:hidden;*/
+            /*text-overflow:ellipsis;*/
+            /*display:-webkit-box;*/
+            /*-webkit-box-orient:vertical;*/
+            /*-webkit-line-clamp:2;*/
+            /*overflow: hidden;*/
+            /*display: inline-block;*/
+            /*-ms-word-break: break-all;*/
+            /*word-break: break-all;*/
 
         }
         #msgBox .lists .times {
@@ -302,6 +307,14 @@
                 height: 36px!important;
             }
         }
+        .two{
+            font-family: 'Microsoft YaHei';
+            overflow: hidden;
+            display: inline-block;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            width: 80%;
+        }
     </style>
 </head>
 <body>
@@ -323,11 +336,11 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">爱尔在线</a></li>
-                    <li><a href="shop.html">助听器产品</a></li>
+                    <li><a href="shops.html">助听器产品</a></li>
                     <li><a href="news.html">最新动态</a></li>
                     <li><a href="knowledge.html">知识专栏</a></li>
                     <li><a href="#">医疗服务</a></li>
-                    <li><a href="posts.html" style="background: #222">交流中心</a></li>
+                    <li><a href="posts.html">交流中心</a></li>
                     <li class="liss" >
                         <a href="#">关于我们</a>
                         <ul style="display:none">
@@ -356,7 +369,7 @@
                 <div class="userPic"><img src="img/face1.gif" style="width: 48px;height: 48px"/></div>
                 <div class="content" >
                     <div class="userName"><a href="javascript:;">永不上线</a>:</div>
-                    <div class="msgInfo"><a href="posts_sec.html">新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能</a></div></br>
+                    <div class="msgInfo two" data-ellipsis="true" data-ellipsis-max-width="400" data-ellipsis-max-line="2">新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能新增删除广播功能</div></br>
                     <div class="times"><span>07月05日 15:14</span><a class="del" href="javascript:;">删除</a></div>
                 </div>
             </li>
@@ -407,7 +420,7 @@
         <div>
             <input id="userName" class="f-text" value="" >
         </div>
-        <div><textarea id="conBox" class="f-text"></textarea></div>
+        <div><textarea id="conBox" class="f-text"  maxlength="200"></textarea></div>
         <div class="tr">
             <p>
                 <span class="countTxt">还能输入</span><strong class="maxNum">140</strong><span>个字</span>
